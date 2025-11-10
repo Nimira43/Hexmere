@@ -56,3 +56,14 @@ const renderer = new THREE.WebGLRenderer({
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+
+const timer = new Timer()
+const tick = () => {
+  timer.update()
+  const elapsedTime = timer.getElapsed()
+  controls.update()
+  renderer.render(scene, camera)
+  window.requestAnimationFrame(tick)
+}
+
+tick()
