@@ -19,3 +19,8 @@ scene.add(sphere)
 const directionalLight = new THREE.DirectionalLight('#ffffff', 1.5)
 directionalLight.position.set(3, 2, -8)
 scene.add(directionalLight)
+
+const sizes = {
+  width: window.innerWidth,
+  height: window.innerHeight
+}
