@@ -16,6 +16,9 @@ const sphere = new THREE.Mesh(
 )
 scene.add(sphere)
 
+const ambientLight = new THREE.AmbientLight('#ffffff, 0.5')
+scene.add(ambientLight)
+
 const directionalLight = new THREE.DirectionalLight('#ffffff', 1.5)
 directionalLight.position.set(3, 2, -8)
 scene.add(directionalLight)
@@ -24,3 +27,4 @@ const sizes = {
   width: window.innerWidth,
   height: window.innerHeight
 }
+
