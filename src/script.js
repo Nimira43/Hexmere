@@ -19,6 +19,12 @@ scene.add(floor)
 const house = new THREE.Group()
 scene.add(house)
 
+const walls = new THREE.Mesh(
+  new THREE.BoxGeometry(4, 2.5, 4),
+  new THREE.MeshStandardMaterial()
+)
+house.add(walls)
+
 const ambientLight = new THREE.AmbientLight('#ffffff', 0.5)
 scene.add(ambientLight)
 
