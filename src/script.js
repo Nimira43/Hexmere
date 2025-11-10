@@ -23,8 +23,15 @@ const walls = new THREE.Mesh(
   new THREE.BoxGeometry(4, 2.5, 4),
   new THREE.MeshStandardMaterial()
 )
-walls.position.y += 1.25
+walls.position.y = 1.25
 house.add(walls)
+
+const roof = new THREE.Mesh(
+  new THREE.ConeGeometry(3.5, 1.5, 4),
+  new THREE.MeshStandardMaterial()
+)
+roof.position.y = 2.5 + 0.75
+house.add(roof)
 
 const ambientLight = new THREE.AmbientLight('#ffffff', 0.5)
 scene.add(ambientLight)
