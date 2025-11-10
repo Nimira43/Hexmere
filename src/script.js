@@ -16,6 +16,12 @@ const sphere = new THREE.Mesh(
 )
 scene.add(sphere)
 
+const floor = new THREE.Mesh(
+  new THREE.PlaneGeometry(20, 20),
+  new THREE.MeshStandardMaterial()
+)
+scene.add(floor)
+
 const ambientLight = new THREE.AmbientLight('#ffffff', 0.5)
 scene.add(ambientLight)
 
