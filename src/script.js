@@ -8,14 +8,6 @@ const gui = new GUI()
 const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
-const sphere = new THREE.Mesh(
-  new THREE.SphereGeometry(1, 32, 32),
-  new THREE.MeshStandardMaterial({
-    roughness: 0.7
-  })
-)
-scene.add(sphere)
-
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20),
   new THREE.MeshStandardMaterial()
