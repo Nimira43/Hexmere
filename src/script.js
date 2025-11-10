@@ -36,13 +36,16 @@ house.add(roof)
 
 const door = new THREE.Mesh(
   new THREE.PlaneGeometry(2.2, 2.2),
-  new THREE.MeshStandardMaterial({
-    color: '#ff4500'
-  })
+  new THREE.MeshStandardMaterial()
 )
 door.position.y = 1
 door.position.z = 2 + 0.01
 house.add(door)
+
+const bushGeometry = new THREE.SphereGeometry(1, 16, 16)
+const bushMaterial = new THREE.MeshStandardMaterial()
+
+
 
 const ambientLight = new THREE.AmbientLight('#ffffff', 0.5)
 scene.add(ambientLight)
