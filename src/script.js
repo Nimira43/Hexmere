@@ -36,8 +36,12 @@ house.add(roof)
 
 const door = new THREE.Mesh(
   new THREE.PlaneGeometry(2.2, 2.2),
-  new THREE.MeshStandardMaterial()
+  new THREE.MeshStandardMaterial({
+    color: '#ff4500'
+  })
 )
+door.position.y = 1
+door.position.z = 2 + 0.01
 house.add(door)
 
 const ambientLight = new THREE.AmbientLight('#ffffff', 0.5)
