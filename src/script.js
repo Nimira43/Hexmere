@@ -31,6 +31,7 @@ const roof = new THREE.Mesh(
   new THREE.MeshStandardMaterial()
 )
 roof.position.y = 2.5 + 0.75
+roof.rotation.y = Math.PI * 0.25
 house.add(roof)
 
 const ambientLight = new THREE.AmbientLight('#ffffff', 0.5)
