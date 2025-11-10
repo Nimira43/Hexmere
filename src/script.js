@@ -16,7 +16,7 @@ const sphere = new THREE.Mesh(
 )
 scene.add(sphere)
 
-const ambientLight = new THREE.AmbientLight('#ffffff, 0.5')
+const ambientLight = new THREE.AmbientLight('#ffffff', 0.5)
 scene.add(ambientLight)
 
 const directionalLight = new THREE.DirectionalLight('#ffffff', 1.5)
