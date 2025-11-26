@@ -67,12 +67,13 @@ scene.add(graves)
 
 for (let i = 0; i < 30; i++) {
   const angle = Math.random() * Math.PI * 2
-  const radius = 4
+  const radius = 3 + Math.random() * 4
   const x = Math.sin(angle) * radius
   const z = Math.cos(angle) * radius
 
   const grave = new THREE.Mesh(graveGeometry, graveMaterial)
   grave.position.x = x
+  grave.position.y = Math.random() * 0.4
   grave.position.z = z
   
   graves.add(grave)
