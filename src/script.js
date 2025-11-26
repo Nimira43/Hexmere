@@ -8,21 +8,35 @@ const gui = new GUI()
 const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
-
 const textureLoader = new THREE.TextureLoader()
 
 const floorAlphaTexture = textureLoader.load('./floor/alpha.jpg')
 const floorColourTexture = textureLoader.load('./floor/coast-sand-rocks/csr-diff.jpg') 
 const floorARMTexture = textureLoader.load('./floor/coast-sand-rocks/csr-arm.jpg') 
-const floorNormalTexture = textureLoader.load('./floor/coast-sand-rocks/noe-gl.jpg') 
+const floorNormalTexture = textureLoader.load('./floor/coast-sand-rocks/nor-gl.jpg') 
 const floorDisplacementTexture = textureLoader.load('./floor/coast-sand-rocks/csr-disp.jpg') 
 
+floorColourTexture.repeat.set(8, 8)
+floorARMTexture.repeat.set(8, 8)
+floorNormalTexture.repeat.set(8, 8)
+floorDisplacementTexture.repeat.set(8, 8)
+
+floorColourTexture.wrapS = THREE.RepeatWrapping
+floorARMTexture.wrapS = THREE.RepeatWrapping
+floorNormalTexture.wrapS = THREE.RepeatWrapping
+floorDisplacementTexture.wrapS = THREE.RepeatWrapping
+
+floorColourTexture.wrapT = THREE.RepeatWrapping
+floorARMTexture.wrapT = THREE.RepeatWrapping
+floorColourTexture.wrapT = THREE.RepeatWrapping
+floorDisplacementTexture.wrapT = THREE.RepeatWrapping
 
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20),
   new THREE.MeshStandardMaterial({
     alphaMap: floorAlphaTexture,
-    transparent: true
+    transparent: true,
+    map: floorColourTexture,
   })
 )
 
