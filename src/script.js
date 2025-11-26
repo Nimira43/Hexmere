@@ -38,9 +38,9 @@ const wallNormalTexture = textureLoader.load('./wall/castle-brick-broken/cbb-nor
 
 wallColourTexture.colorSpace = THREE.SRGBColorSpace
 
-const roofSlatesColourTexture = textureLoader.load('./roof-slates/roof-slates-diff.jpg') 
-const roofSlatesARMTexture = textureLoader.load('./roof-slates/roof-slates-arm.jpg') 
-const roofSlatesNormalTexture = textureLoader.load('./roof-slates/roof-slates-nor-gl.jpg') 
+const roofSlatesColourTexture = textureLoader.load('./roof/roof-slates/roof-slates-diff.jpg') 
+const roofSlatesARMTexture = textureLoader.load('./roof/roof-slates/roof-slates-arm.jpg') 
+const roofSlatesNormalTexture = textureLoader.load('./roof/roof-slates/roof-slates-nor-gl.jpg') 
 
 roofSlatesColourTexture.colorSpace = THREE.SRGBColorSpace
 
@@ -84,7 +84,13 @@ house.add(walls)
 
 const roof = new THREE.Mesh(
   new THREE.ConeGeometry(3.5, 1.5, 4),
-  new THREE.MeshStandardMaterial({})
+  new THREE.MeshStandardMaterial({
+    map: roofSlatesColourTexture,
+    aoMap: roofSlatesARMTexture,
+    roughnessMap: roofSlatesARMTexture,
+    metalnessMap: roofSlatesARMTexture,
+    normalMap: roofSlatesNormalTexture
+  })
 )
 roof.position.y = 2.5 + 0.75
 roof.rotation.y = Math.PI * 0.25
