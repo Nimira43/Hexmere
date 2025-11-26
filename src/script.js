@@ -11,6 +11,8 @@ const scene = new THREE.Scene()
 
 const textureLoader = new THREE.TextureLoader()
 
+const floorAlphaTexture = textureLoader.load('./floor/alpha.jpg')
+
 
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20),
