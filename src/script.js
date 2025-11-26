@@ -16,7 +16,10 @@ const floorAlphaTexture = textureLoader.load('./floor/alpha.jpg')
 
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20),
-  new THREE.MeshStandardMaterial()
+  new THREE.MeshStandardMaterial({
+    alphaMap: floorAlphaTexture,
+    transparent: true
+  })
 )
 
 floor.rotation.x = - Math.PI * 0.5
