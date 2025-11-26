@@ -16,6 +16,7 @@ const floorARMTexture = textureLoader.load('./floor/coast-sand-rocks/csr-arm.jpg
 const floorNormalTexture = textureLoader.load('./floor/coast-sand-rocks/nor-gl.jpg') 
 const floorDisplacementTexture = textureLoader.load('./floor/coast-sand-rocks/csr-disp.jpg') 
 
+floorColourTexture.colorSpace = THREE.SRGBColorSpace
 floorColourTexture.repeat.set(8, 8)
 floorARMTexture.repeat.set(8, 8)
 floorNormalTexture.repeat.set(8, 8)
