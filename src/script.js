@@ -39,6 +39,8 @@ const floor = new THREE.Mesh(
     transparent: true,
     map: floorColourTexture,
     aoMap: floorARMTexture,
+    roughnessMap: floorARMTexture,
+    metalnessMap: floorARMTexture,
   })
 )
 
