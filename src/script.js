@@ -38,6 +38,7 @@ const floor = new THREE.Mesh(
     alphaMap: floorAlphaTexture,
     transparent: true,
     map: floorColourTexture,
+    aoMap: floorARMTexture,
   })
 )
 
