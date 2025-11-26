@@ -12,6 +12,10 @@ const scene = new THREE.Scene()
 const textureLoader = new THREE.TextureLoader()
 
 const floorAlphaTexture = textureLoader.load('./floor/alpha.jpg')
+const floorColourTexture = textureLoader.load('./floor/coast-sand-rocks/csr-diff.jpg') 
+const floorARMTexture = textureLoader.load('./floor/coast-sand-rocks/csr-arm.jpg') 
+const floorNormalTexture = textureLoader.load('./floor/coast-sand-rocks/noe-gl.jpg') 
+const floorDisplacementTexture = textureLoader.load('./floor/coast-sand-rocks/csr-disp.jpg') 
 
 
 const floor = new THREE.Mesh(
