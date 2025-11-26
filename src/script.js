@@ -13,9 +13,11 @@ const textureLoader = new THREE.TextureLoader()
 const floorAlphaTexture = textureLoader.load('./floor/alpha.jpg')
 const floorColourTexture = textureLoader.load('./floor/coast-sand-rocks/csr-diff.jpg') 
 const floorARMTexture = textureLoader.load('./floor/coast-sand-rocks/csr-arm.jpg') 
-const floorNormalTexture = textureLoader.load('./floor/coast-sand-rocks/nor-gl.jpg') 
+const floorNormalTexture = textureLoader.load('./floor/coast-sand-rocks/csr-nor-gl.jpg') 
 const floorDisplacementTexture = textureLoader.load('./floor/coast-sand-rocks/csr-disp.jpg') 
-
+const wallColourTexture = textureLoader.load('./wall/castle-brick-broken/cbb-diff.jpg') 
+const wallARMTexture = textureLoader.load('./wall/castle-brick-broken/cbb-arm.jpg') 
+const wallNormalTexture = textureLoader.load('./wall/castle-brick-broken/cbb-nor-gl.jpg') 
 floorColourTexture.colorSpace = THREE.SRGBColorSpace
 floorColourTexture.repeat.set(8, 8)
 floorARMTexture.repeat.set(8, 8)
@@ -29,7 +31,7 @@ floorDisplacementTexture.wrapS = THREE.RepeatWrapping
 
 floorColourTexture.wrapT = THREE.RepeatWrapping
 floorARMTexture.wrapT = THREE.RepeatWrapping
-floorColourTexture.wrapT = THREE.RepeatWrapping
+floorNormalTexture.wrapT = THREE.RepeatWrapping
 floorDisplacementTexture.wrapT = THREE.RepeatWrapping
 
 const floor = new THREE.Mesh(
