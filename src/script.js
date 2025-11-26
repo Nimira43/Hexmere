@@ -38,18 +38,6 @@ const wallNormalTexture = textureLoader.load('./wall/castle-brick-broken/cbb-nor
 
 wallColourTexture.colorSpace = THREE.SRGBColorSpace
 
-// wallColourTexture.repeat.set(8, 8)
-// wallARMTexture.repeat.set(8, 8)
-// wallNormalTexture.repeat.set(8, 8)
-
-// wallColourTexture.wrapS = THREE.RepeatWrapping
-// wallARMTexture.wrapS = THREE.RepeatWrapping
-// wallNormalTexture.wrapS = THREE.RepeatWrapping
-
-// wallColourTexture.wrapT = THREE.RepeatWrapping
-// wallARMTexture.wrapT = THREE.RepeatWrapping
-// wallNormalTexture.wrapT = THREE.RepeatWrapping
-
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20, 100, 100),
   new THREE.MeshStandardMaterial({
