@@ -41,6 +41,7 @@ const floor = new THREE.Mesh(
     aoMap: floorARMTexture,
     roughnessMap: floorARMTexture,
     metalnessMap: floorARMTexture,
+    normalMap: floorNormalTexture
   })
 )
 
