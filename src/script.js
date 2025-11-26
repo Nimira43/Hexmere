@@ -44,6 +44,14 @@ const roofSlatesNormalTexture = textureLoader.load('./roof/roof-slates/roof-slat
 
 roofSlatesColourTexture.colorSpace = THREE.SRGBColorSpace
 
+roofSlatesColourTexture.repeat.set(3, 1)
+roofSlatesARMTexture.repeat.set(3, 1)
+roofSlatesNormalTexture.repeat.set(3, 1)
+
+roofSlatesColourTexture.wrapS = THREE.RepeatWrapping
+roofSlatesARMTexture.wrapS = THREE.RepeatWrapping
+roofSlatesNormalTexture.wrapS = THREE.RepeatWrapping
+
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20, 100, 100),
   new THREE.MeshStandardMaterial({
