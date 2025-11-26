@@ -8,6 +8,10 @@ const gui = new GUI()
 const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
+
+const textureLoader = new THREE.TextureLoader()
+
+
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20),
   new THREE.MeshStandardMaterial()
