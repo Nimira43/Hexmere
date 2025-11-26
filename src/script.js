@@ -120,7 +120,6 @@ for (let i = 0; i < 30; i++) {
   graves.add(grave)
 }
 
-
 const ambientLight = new THREE.AmbientLight('#ffffff', 0.5)
 scene.add(ambientLight)
 
