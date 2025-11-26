@@ -33,7 +33,7 @@ floorColourTexture.wrapT = THREE.RepeatWrapping
 floorDisplacementTexture.wrapT = THREE.RepeatWrapping
 
 const floor = new THREE.Mesh(
-  new THREE.PlaneGeometry(20, 20),
+  new THREE.PlaneGeometry(20, 20, 100, 100),
   new THREE.MeshStandardMaterial({
     alphaMap: floorAlphaTexture,
     transparent: true,
@@ -41,7 +41,8 @@ const floor = new THREE.Mesh(
     aoMap: floorARMTexture,
     roughnessMap: floorARMTexture,
     metalnessMap: floorARMTexture,
-    normalMap: floorNormalTexture
+    normalMap: floorNormalTexture,
+    displacementMap: floorDisplacementTexture
   })
 )
 
