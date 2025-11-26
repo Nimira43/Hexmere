@@ -75,6 +75,9 @@ for (let i = 0; i < 30; i++) {
   grave.position.x = x
   grave.position.y = Math.random() * 0.4
   grave.position.z = z
+  grave.rotation.x = (Math.random() - 0.5) * 0.4
+  grave.rotation.y = (Math.random() - 0.5) * 0.4
+  grave.rotation.z = (Math.random() - 0.5) * 0.4
   
   graves.add(grave)
 }
