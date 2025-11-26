@@ -7,7 +7,6 @@ import GUI from 'lil-gui'
 const gui = new GUI()
 const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
-
 const textureLoader = new THREE.TextureLoader()
 
 const floorAlphaTexture = textureLoader.load('./floor/alpha.jpg')
@@ -15,10 +14,9 @@ const floorColourTexture = textureLoader.load('./floor/coast-sand-rocks/csr-diff
 const floorARMTexture = textureLoader.load('./floor/coast-sand-rocks/csr-arm.jpg') 
 const floorNormalTexture = textureLoader.load('./floor/coast-sand-rocks/csr-nor-gl.jpg') 
 const floorDisplacementTexture = textureLoader.load('./floor/coast-sand-rocks/csr-disp.jpg') 
-const wallColourTexture = textureLoader.load('./wall/castle-brick-broken/cbb-diff.jpg') 
-const wallARMTexture = textureLoader.load('./wall/castle-brick-broken/cbb-arm.jpg') 
-const wallNormalTexture = textureLoader.load('./wall/castle-brick-broken/cbb-nor-gl.jpg') 
+
 floorColourTexture.colorSpace = THREE.SRGBColorSpace
+
 floorColourTexture.repeat.set(8, 8)
 floorARMTexture.repeat.set(8, 8)
 floorNormalTexture.repeat.set(8, 8)
@@ -33,6 +31,24 @@ floorColourTexture.wrapT = THREE.RepeatWrapping
 floorARMTexture.wrapT = THREE.RepeatWrapping
 floorNormalTexture.wrapT = THREE.RepeatWrapping
 floorDisplacementTexture.wrapT = THREE.RepeatWrapping
+
+const wallColourTexture = textureLoader.load('./wall/castle-brick-broken/cbb-diff.jpg') 
+const wallARMTexture = textureLoader.load('./wall/castle-brick-broken/cbb-arm.jpg') 
+const wallNormalTexture = textureLoader.load('./wall/castle-brick-broken/cbb-nor-gl.jpg') 
+
+wallColourTexture.colorSpace = THREE.SRGBColorSpace
+
+// wallColourTexture.repeat.set(8, 8)
+// wallARMTexture.repeat.set(8, 8)
+// wallNormalTexture.repeat.set(8, 8)
+
+// wallColourTexture.wrapS = THREE.RepeatWrapping
+// wallARMTexture.wrapS = THREE.RepeatWrapping
+// wallNormalTexture.wrapS = THREE.RepeatWrapping
+
+// wallColourTexture.wrapT = THREE.RepeatWrapping
+// wallARMTexture.wrapT = THREE.RepeatWrapping
+// wallNormalTexture.wrapT = THREE.RepeatWrapping
 
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20, 100, 100),
@@ -61,7 +77,13 @@ scene.add(house)
 
 const walls = new THREE.Mesh(
   new THREE.BoxGeometry(4, 2.5, 4),
-  new THREE.MeshStandardMaterial()
+  new THREE.MeshStandardMaterial({
+    map: wallColourTexture,
+    aoMap: wallARMTexture,
+    roughnessMap: wallARMTexture,
+    metalnessMap: wallARMTexture,
+    normalMap: wallNormalTexture
+  })
 )
 walls.position.y = 1.25
 house.add(walls)
