@@ -66,6 +66,7 @@ const graves = new THREE.Group()
 scene.add(graves)
 
 for (let i = 0; i < 30; i++) {
+  const angle = Math.random() * Math.PI * 2
   const grave = new THREE.Mesh(graveGeometry, graveMaterial)
   graves.add(grave)
 }
