@@ -72,13 +72,11 @@ const graveNormalTexture = textureLoader.load('./grave/plastered-stone-wall/psw-
 
 graveColourTexture.colorSpace = THREE.SRGBColorSpace
 
-graveColourTexture.repeat.set(2, 1)
-graveARMTexture.repeat.set(2, 1)
-graveNormalTexture.repeat.set(2, 1)
+graveColourTexture.repeat.set(0.3, 0.4)
+graveARMTexture.repeat.set(0.3, 0.4)
+graveNormalTexture.repeat.set(0.3, 0.4)
 
-graveColourTexture.wrapS = THREE.RepeatWrapping
-graveARMTexture.wrapS = THREE.RepeatWrapping
-graveNormalTexture.wrapS = THREE.RepeatWrapping
+
 
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20, 100, 100),
