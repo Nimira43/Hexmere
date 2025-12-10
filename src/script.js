@@ -58,6 +58,15 @@ const bushNormalTexture = textureLoader.load('./bush/leaves-forest-grouns/lfg-no
 
 bushColourTexture.colorSpace = THREE.SRGBColorSpace
 
+bushColourTexture.repeat.set(3, 1)
+bushARMTexture.repeat.set(3, 1)
+bushNormalTexture.repeat.set(3, 1)
+
+bushColourTexture.wrapS = THREE.RepeatWrapping
+bushARMTexture.wrapS = THREE.RepeatWrapping
+bushNormalTexture.wrapS = THREE.RepeatWrapping
+
+
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20, 100, 100),
   new THREE.MeshStandardMaterial({
