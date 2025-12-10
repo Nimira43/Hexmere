@@ -76,7 +76,15 @@ graveColourTexture.repeat.set(0.3, 0.4)
 graveARMTexture.repeat.set(0.3, 0.4)
 graveNormalTexture.repeat.set(0.3, 0.4)
 
+const doorAlphaTexture = textureLoader.load('./door/alpha.jpg')
+const doorAmbientOcclusionTexture = textureLoader.load('./door/ambientOcclusion.jpg')
+const doorColourTexture = textureLoader.load('./door/colour.jpg') 
+const doorHeightTexture = textureLoader.load('./door/height.jpg') 
+const doorMetalnessTexture = textureLoader.load('./door/metalness.jpg') 
+const doorNormalTexture = textureLoader.load('./door/normal.jpg') 
+const doorRoughnessTexture = textureLoader.load('./door/roughness.jpg') 
 
+doorColourTexture.colorSpace = THREE.SRGBColorSpace
 
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20, 100, 100),
