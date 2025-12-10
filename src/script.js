@@ -58,9 +58,9 @@ const bushNormalTexture = textureLoader.load('./bush/leaves-forest-grouns/lfg-no
 
 bushColourTexture.colorSpace = THREE.SRGBColorSpace
 
-bushColourTexture.repeat.set(3, 1)
-bushARMTexture.repeat.set(3, 1)
-bushNormalTexture.repeat.set(3, 1)
+bushColourTexture.repeat.set(2, 1)
+bushARMTexture.repeat.set(2, 1)
+bushNormalTexture.repeat.set(2, 1)
 
 bushColourTexture.wrapS = THREE.RepeatWrapping
 bushARMTexture.wrapS = THREE.RepeatWrapping
