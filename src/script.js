@@ -222,6 +222,10 @@ const directionalLight = new THREE.DirectionalLight('#86cdff', 1)
 directionalLight.position.set(3, 2, -8)
 scene.add(directionalLight)
 
+const doorLight = new THREE.PointLight('#ff7d46', 5)
+doorLight.position.set(0, 2.2, 2.5)
+house.add(doorLight)
+
 const sizes = {
   width: window.innerWidth,
   height: window.innerHeight
