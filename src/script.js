@@ -270,7 +270,7 @@ const tick = () => {
   timer.update()
   const elapsedTime = timer.getElapsed()
 
-  const ghost1Angle = elapsedTime
+  const ghost1Angle = elapsedTime * 0.5
   ghost1.position.x = Math.cos(ghost1Angle) * 4
   ghost1.position.z = Math.sin(ghost1Angle) * 4
 
