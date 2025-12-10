@@ -228,7 +228,8 @@ house.add(doorLight)
 
 const ghost1 =new THREE.PointLight('#8800ff', 6)
 const ghost2 =new THREE.PointLight('#ff0088', 6)
-const ghost3 =new THREE.PointLight('#ff0000', 6)
+const ghost3 = new THREE.PointLight('#ff0000', 6)
+scene.add(ghost1, ghost2, ghost3)
 
 const sizes = {
   width: window.innerWidth,
