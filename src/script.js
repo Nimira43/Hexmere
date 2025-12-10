@@ -215,7 +215,7 @@ for (let i = 0; i < 30; i++) {
   graves.add(grave)
 }
 
-const ambientLight = new THREE.AmbientLight('#ffffff', 0.5)
+const ambientLight = new THREE.AmbientLight('#86cdff', 0.275)
 scene.add(ambientLight)
 
 const directionalLight = new THREE.DirectionalLight('#ffffff', 1.5)
