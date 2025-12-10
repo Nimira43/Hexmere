@@ -52,9 +52,9 @@ roofSlatesColourTexture.wrapS = THREE.RepeatWrapping
 roofSlatesARMTexture.wrapS = THREE.RepeatWrapping
 roofSlatesNormalTexture.wrapS = THREE.RepeatWrapping
 
-const bushColourTexture = textureLoader.load('./bush/leaves-forest-grouns/lfg-diff.jpg') 
-const bushARMTexture = textureLoader.load('./bush/leaves-forest-grouns/lfg-arm.jpg') 
-const bushNormalTexture = textureLoader.load('./bush/leaves-forest-grouns/lfg-nor-gl.jpg') 
+const bushColourTexture = textureLoader.load('./bush/leaves-forest-ground/lfg-diff.jpg') 
+const bushARMTexture = textureLoader.load('./bush/leaves-forest-ground/lfg-arm.jpg') 
+const bushNormalTexture = textureLoader.load('./bush/leaves-forest-ground/lfg-nor-gl.jpg') 
 
 bushColourTexture.colorSpace = THREE.SRGBColorSpace
 
@@ -128,7 +128,13 @@ door.position.z = 2 + 0.01
 house.add(door)
 
 const bushGeometry = new THREE.SphereGeometry(1, 16, 16)
-const bushMaterial = new THREE.MeshStandardMaterial()
+const bushMaterial = new THREE.MeshStandardMaterial({
+  map: bushColourTexture,
+  aoMap: bushARMTexture,
+  roughnessMap: bushARMTexture,
+  metalnessMap: bushARMTexture,
+  normalMap: bushNormalTexture
+})
 
 const bush1 = new THREE.Mesh(bushGeometry, bushMaterial)
 bush1.scale.set(0.5, 0.5, 0.5)
