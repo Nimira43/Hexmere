@@ -218,7 +218,7 @@ for (let i = 0; i < 30; i++) {
 const ambientLight = new THREE.AmbientLight('#86cdff', 0.275)
 scene.add(ambientLight)
 
-const directionalLight = new THREE.DirectionalLight('#ffffff', 1.5)
+const directionalLight = new THREE.DirectionalLight('#86cdff', 1)
 directionalLight.position.set(3, 2, -8)
 scene.add(directionalLight)
 
