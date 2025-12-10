@@ -129,6 +129,7 @@ house.add(door)
 
 const bushGeometry = new THREE.SphereGeometry(1, 16, 16)
 const bushMaterial = new THREE.MeshStandardMaterial({
+  color: '#ccffcc',
   map: bushColourTexture,
   aoMap: bushARMTexture,
   roughnessMap: bushARMTexture,
