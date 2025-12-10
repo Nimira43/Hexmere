@@ -169,7 +169,13 @@ bush4.rotation.x = - 0.75
 house.add(bush1, bush2, bush3, bush4)
 
 const graveGeometry = new THREE.BoxGeometry(0.6, 0.8, 0.2)
-const graveMaterial = new THREE.MeshStandardMaterial()
+const graveMaterial = new THREE.MeshStandardMaterial({
+  map: graveColourTexture,
+  aoMap: graveARMTexture,
+  roughnessMap: graveARMTexture,
+  metalnessMap: graveARMTexture,
+  normalMap: graveNormalTexture
+})
 
 const graves = new THREE.Group()
 scene.add(graves)
