@@ -52,6 +52,12 @@ roofSlatesColourTexture.wrapS = THREE.RepeatWrapping
 roofSlatesARMTexture.wrapS = THREE.RepeatWrapping
 roofSlatesNormalTexture.wrapS = THREE.RepeatWrapping
 
+const bushColourTexture = textureLoader.load('./bush/leaves-forest-grouns/lfg-diff.jpg') 
+const bushARMTexture = textureLoader.load('./bush/leaves-forest-grouns/lfg-arm.jpg') 
+const bushNormalTexture = textureLoader.load('./bush/leaves-forest-grouns/lfg-nor-gl.jpg') 
+
+bushColourTexture.colorSpace = THREE.SRGBColorSpace
+
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20, 100, 100),
   new THREE.MeshStandardMaterial({
