@@ -86,6 +86,33 @@ const doorRoughnessTexture = textureLoader.load('./door/roughness.jpg')
 
 doorColourTexture.colorSpace = THREE.SRGBColorSpace
 
+doorAlphaTexture.repeat.set(8, 8)
+doorAmbientOcclusionTexture.repeat.set(8, 8)
+doorColourTexture.repeat.set(8, 8)
+doorHeightTexture.repeat.set(8, 8)
+doorMetalnessTexture.repeat.set(8, 8)
+doorColourTexture.repeat.set(8, 8)
+doorNormalTexture.repeat.set(8, 8)
+doorRoughnessTexture.repeat.set(8, 8)
+
+doorAlphaTexture.wrapS = THREE.RepeatWrapping
+doorAmbientOcclusionTexture.wrapS = THREE.RepeatWrapping
+doorColourTexture.wrapS = THREE.RepeatWrapping
+doorHeightTexture.wrapS = THREE.RepeatWrapping
+doorMetalnessTexture.wrapS = THREE.RepeatWrapping
+doorColourTexture.wrapS = THREE.RepeatWrapping
+doorNormalTexture.wrapS = THREE.RepeatWrapping
+doorRoughnessTexture.wrapS = THREE.RepeatWrapping
+
+doorAlphaTexture.wrapT = THREE.RepeatWrapping
+doorAmbientOcclusionTexture.wrapT = THREE.RepeatWrapping
+doorColourTexture.wrapT = THREE.RepeatWrapping
+doorHeightTexture.wrapT = THREE.RepeatWrapping
+doorMetalnessTexture.wrapT = THREE.RepeatWrapping
+doorColourTexture.wrapT = THREE.RepeatWrapping
+doorNormalTexture.wrapT = THREE.RepeatWrapping
+doorRoughnessTexture.wrapT = THREE.RepeatWrapping
+
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20, 100, 100),
   new THREE.MeshStandardMaterial({
