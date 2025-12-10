@@ -66,6 +66,19 @@ bushColourTexture.wrapS = THREE.RepeatWrapping
 bushARMTexture.wrapS = THREE.RepeatWrapping
 bushNormalTexture.wrapS = THREE.RepeatWrapping
 
+const graveColourTexture = textureLoader.load('./grave/plastered-stone-wall/psw-diff.jpg') 
+const graveARMTexture = textureLoader.load('./grave/plastered-stone-wall/psw-arm.jpg') 
+const graveNormalTexture = textureLoader.load('./grave/plastered-stone-wall/psw-nor-gl.jpg') 
+
+graveColourTexture.colorSpace = THREE.SRGBColorSpace
+
+graveColourTexture.repeat.set(2, 1)
+graveARMTexture.repeat.set(2, 1)
+graveNormalTexture.repeat.set(2, 1)
+
+graveColourTexture.wrapS = THREE.RepeatWrapping
+graveARMTexture.wrapS = THREE.RepeatWrapping
+graveNormalTexture.wrapS = THREE.RepeatWrapping
 
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(20, 20, 100, 100),
