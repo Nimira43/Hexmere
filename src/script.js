@@ -269,6 +269,11 @@ const timer = new Timer()
 const tick = () => {
   timer.update()
   const elapsedTime = timer.getElapsed()
+
+  const ghost1Angle = elapsedTime
+  ghost1.position.x = Math.cos(ghost1Angle) * 4
+  ghost1.position.z = Math.sin(ghost1Angle) * 4
+
   controls.update()
   renderer.render(scene, camera)
   window.requestAnimationFrame(tick)
