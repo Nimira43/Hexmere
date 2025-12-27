@@ -294,6 +294,9 @@ directionalLight.shadow.camera.far = 20
 ghost1.shadow.mapSize.width = 256
 ghost1.shadow.mapSize.height = 256
 ghost1.shadow.camera.far = 100
+ghost2.shadow.mapSize.width = 256
+ghost2.shadow.mapSize.height = 256
+ghost2.shadow.camera.far = 100
 
 const timer = new Timer()
 const tick = () => {
