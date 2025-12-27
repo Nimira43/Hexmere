@@ -307,6 +307,7 @@ scene.add(sky)
 sky.material.uniforms['turbidity'].value = 10
 sky.material.uniforms['rayleigh'].value = 3
 sky.material.uniforms['mieCoefficient'].value = 0.1
+sky.material.uniforms['mieDirectionalG'].value = 0.95
 
 const timer = new Timer()
 const tick = () => {
