@@ -273,6 +273,9 @@ ghost1.castShadow = true
 ghost2.castShadow = true
 ghost3.castShadow = true
 
+walls.castShaodw = true
+walls.receiveShadow = true
+
 
 const timer = new Timer()
 const tick = () => {
