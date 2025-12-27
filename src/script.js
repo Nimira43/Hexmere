@@ -305,6 +305,7 @@ const sky = new Sky()
 scene.add(sky)
 
 sky.material.uniforms['turbidity'].value = 10
+sky.material.uniforms['rayleigh'].value = 3
 
 const timer = new Timer()
 const tick = () => {
