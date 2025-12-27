@@ -301,6 +301,9 @@ ghost3.shadow.mapSize.width = 256
 ghost3.shadow.mapSize.height = 256
 ghost3.shadow.camera.far = 10
 
+const sky = new Sky()
+scene.add(sky)
+
 const timer = new Timer()
 const tick = () => {
   timer.update()
