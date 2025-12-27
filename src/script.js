@@ -278,6 +278,9 @@ walls.receiveShadow = true
 roof.castShadow = true
 floor.receiveShadow = true
 
+for (const grave of graves.children) {
+  
+}
 
 const timer = new Timer()
 const tick = () => {
