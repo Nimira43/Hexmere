@@ -288,7 +288,8 @@ directionalLight.shadow.mapSize.height = 250
 directionalLight.shadow.camera.top = 8
 directionalLight.shadow.camera.right = 8
 directionalLight.shadow.camera.bottom = -8
-directionalLight.shadow.camera.left = -8
+directionalLight.shadow.camera.near = 1
+directionalLight.shadow.camera.far = 20
 
 const timer = new Timer()
 const tick = () => {
