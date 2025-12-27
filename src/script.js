@@ -302,6 +302,7 @@ ghost3.shadow.mapSize.height = 256
 ghost3.shadow.camera.far = 10
 
 const sky = new Sky()
+sky.scale.set(100, 100, 100)
 scene.add(sky)
 
 sky.material.uniforms['turbidity'].value = 10
