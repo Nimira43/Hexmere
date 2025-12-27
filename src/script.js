@@ -279,7 +279,8 @@ roof.castShadow = true
 floor.receiveShadow = true
 
 for (const grave of graves.children) {
-  
+  grave.castShadow = true
+  grave.receiveShadow = true
 }
 
 const timer = new Timer()
