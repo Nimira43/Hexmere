@@ -304,6 +304,8 @@ ghost3.shadow.camera.far = 10
 const sky = new Sky()
 scene.add(sky)
 
+sky.material.uniforms['turbidity'].value = 10
+
 const timer = new Timer()
 const tick = () => {
   timer.update()
