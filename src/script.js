@@ -283,6 +283,8 @@ for (const grave of graves.children) {
   grave.receiveShadow = true
 }
 
+directionalLight.shadow.mapSize.width = 250
+
 const timer = new Timer()
 const tick = () => {
   timer.update()
