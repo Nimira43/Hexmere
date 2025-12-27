@@ -269,6 +269,9 @@ renderer.shadowMap.enabled = true
 renderer.shadowMap.type = THREE.PCFSoftShadowMap
 
 directionalLight.castShadow = true
+ghost1.castShadow = true
+ghost2.castShadow = true
+ghost3.castShadow = true
 
 
 const timer = new Timer()
