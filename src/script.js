@@ -268,6 +268,8 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 renderer.shadowMap.enabled = true
 renderer.shadowMap.type = THREE.PCFSoftShadowMap
 
+directionalLight.castShadow = true
+
 
 const timer = new Timer()
 const tick = () => {
