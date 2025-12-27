@@ -285,6 +285,10 @@ for (const grave of graves.children) {
 
 directionalLight.shadow.mapSize.width = 250
 directionalLight.shadow.mapSize.height = 250
+directionalLight.shadow.camera.top = 8
+directionalLight.shadow.camera.right = 8
+directionalLight.shadow.camera.bottom = 8
+directionalLight.shadow.camera.left = 8
 
 const timer = new Timer()
 const tick = () => {
