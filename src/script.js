@@ -275,6 +275,8 @@ ghost3.castShadow = true
 
 walls.castShaodw = true
 walls.receiveShadow = true
+roof.castShadow = true
+
 
 
 const timer = new Timer()
