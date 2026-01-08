@@ -33,14 +33,20 @@ floorNormalTexture.wrapT = THREE.RepeatWrapping
 floorDisplacementTexture.wrapT = THREE.RepeatWrapping
 
 const wallColourTexture = textureLoader.load('./wall/castle-brick-broken/cbb-diff.jpg') 
+// const wallColourTexture2 = textureLoader.load('./wall/castle-brick-broken/cbb-diff.webp') 
 const wallARMTexture = textureLoader.load('./wall/castle-brick-broken/cbb-arm.jpg') 
+// const wallARMTexture2 = textureLoader.load('./wall/castle-brick-broken/cbb-arm.webp')
 const wallNormalTexture = textureLoader.load('./wall/castle-brick-broken/cbb-nor-gl.jpg') 
+// const wallNormalTexture2 = textureLoader.load('./wall/castle-brick-broken/cbb-nor-gl.webp') 
 
 wallColourTexture.colorSpace = THREE.SRGBColorSpace
 
 const roofSlatesColourTexture = textureLoader.load('./roof/roof-slates/roof-slates-diff.jpg') 
+// const roofSlatesColourTexture2 = textureLoader.load('./roof/roof-slates/roof-slates-diff.webp') 
 const roofSlatesARMTexture = textureLoader.load('./roof/roof-slates/roof-slates-arm.jpg') 
+// const roofSlatesARMTexture2 = textureLoader.load('./roof/roof-slates/roof-slates-arm.webp') 
 const roofSlatesNormalTexture = textureLoader.load('./roof/roof-slates/roof-slates-nor-gl.jpg') 
+// const roofSlatesNormalTexture2 = textureLoader.load('./roof/roof-slates/roof-slates-nor-gl.webp') 
 
 roofSlatesColourTexture.colorSpace = THREE.SRGBColorSpace
 
