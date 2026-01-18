@@ -1,0 +1,29 @@
+{
+  "name": "hexmere",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nimira43/Hexmere.git"
+  },
+  "author": "Nick Rabone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nimira43/Hexmere/issues"
+  },
+  "homepage": "https://github.com/Nimira43/Hexmere#readme",
+  "description": "",
+  "dependencies": {
+    "@types/three": "^0.181.0",
+    "lil-gui": "^0.20.0",
+    "three": "^0.174.0"
+  },
+  "devDependencies": {
+    "vite": "^6.2.2",
+    "vite-plugin-restart": "^0.4.2"
+  }
+}
