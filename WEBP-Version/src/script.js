@@ -273,7 +273,7 @@ ghost1.castShadow = true
 ghost2.castShadow = true
 ghost3.castShadow = true
 
-walls.castShaodw = true
+walls.castShadw = true
 walls.receiveShadow = true
 roof.castShadow = true
 floor.receiveShadow = true
